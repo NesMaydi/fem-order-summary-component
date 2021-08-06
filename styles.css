@@ -1,0 +1,152 @@
+:root {
+  --letters-btn: #fff;
+  --change-button: #382ae1;
+  --bg-annual: #f7f9ff;
+  --paragraph-year-price-cancel: #717fa6;
+  --title-annual-plan: #1f2e55;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  background: url(images/pattern-background-mobile.svg);
+  background-color: #d6e1ff;
+}
+
+p {
+  width: 263px;
+  height: 75px;
+  line-height: 25px;
+  margin: auto auto 24px;
+}
+
+/* Fonts & colors */
+h1,
+#annual-plan,
+#payment,
+#cancel {
+  font-weight: 900;
+}
+
+#annual-plan,
+#year-price {
+  font-size: 14px;
+}
+
+/* Colors */
+h1,
+#annual-plan {
+  color: var(--title-annual-plan);
+}
+
+p,
+#year-price,
+#cancel {
+  color: var(--paragraph-year-price-cancel);
+}
+
+/* styling */
+
+main {
+  width: 327px;
+  height: 567px;
+  background-color: var(--letters-btn);
+  margin: 71px auto;
+  border-radius: 20px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+.bg-img {
+  width: 327px;
+  height: 160px;
+  background: url(images/illustration-hero.svg) center;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.order-intro {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.plan {
+  width: 279px;
+  height: 81px;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  background: #f7f9ff;
+  border-radius: 11px;
+}
+
+#icon {
+  width: 48px;
+  height: 48px;
+  margin: auto;
+}
+
+#plan-price {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#change {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--change-button);
+  text-decoration: underline;
+  margin: auto;
+}
+
+#change:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttons-order {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+#payment {
+  outline-style: none;
+  border: none;
+  width: 279px;
+  height: 50px;
+  background-color: var(--change-button);
+  color: var(--letters-btn);
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  margin: 24px auto;
+}
+
+#payment:hover{
+    cursor: pointer;
+    background-color: #766CF1;
+}
+
+#cancel{
+    width: 96px;
+    height: 20px;
+    margin: auto;
+}
+
+#cancel:hover{
+    cursor: pointer;
+color: #1f2e55;
+}
+
+footer{
+    margin: auto;
+    line-height: 25px;
+    width: 370px;
+    text-align: center;
+}
