@@ -12,8 +12,8 @@ body {
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
   font-size: 15px;
-  background: url(images/pattern-background-mobile.svg);
-  background-color: #d6e1ff;
+  background: #e0e8ff;
+  overflow-x: hidden;
 }
 
 p {
@@ -36,7 +36,6 @@ h1,
   font-size: 14px;
 }
 
-/* Colors */
 h1,
 #annual-plan {
   color: var(--title-annual-plan);
@@ -48,18 +47,29 @@ p,
   color: var(--paragraph-year-price-cancel);
 }
 
-/* styling */
+/* main styling */
 
 main {
   width: 327px;
   height: 567px;
   background-color: var(--letters-btn);
-  margin: 71px auto;
+  margin: 30px auto ;
   border-radius: 20px;
   box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
 }
 
-.bg-img {
+.img-bg {
+  position: absolute;
+  z-index: -1;
+  width: 639.27px;
+  height: 194px;
+  margin: auto;
+  top: 0px;
+  background: url(images/pattern-background-mobile.svg) no-repeat center;
+  background-size: contain;
+}
+
+.bg-img-main {
   width: 327px;
   height: 160px;
   background: url(images/illustration-hero.svg) center;
@@ -106,9 +116,9 @@ main {
   margin: auto;
 }
 
-#change:hover{
-    cursor: pointer;
-    text-decoration: none;
+#change:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .buttons-order {
@@ -128,25 +138,73 @@ main {
   margin: 24px auto;
 }
 
-#payment:hover{
-    cursor: pointer;
-    background-color: #766CF1;
+#payment:hover {
+  cursor: pointer;
+  background-color: #766cf1;
 }
 
-#cancel{
-    width: 96px;
-    height: 20px;
-    margin: auto;
+#cancel {
+  width: 96px;
+  height: 20px;
+  margin: auto;
 }
 
-#cancel:hover{
-    cursor: pointer;
-color: #1f2e55;
+#cancel:hover {
+  cursor: pointer;
+  color: #1f2e55;
 }
 
-footer{
-    margin: auto;
-    line-height: 25px;
-    width: 370px;
-    text-align: center;
+footer {
+  margin: auto;
+  line-height: 25px;
+  width: 300px;
+  text-align: center;
+}
+
+@media screen and (min-width: 635px) {
+
+    main{
+    width: 450px;
+    height: 697px;
+    margin: 10 auto;
+    }
+
+    .img-bg{
+        display: none;
+    }
+    
+    .img-bg-desktop{
+        position: absolute;
+        width: 100%;
+        height: 430px;
+        top: 0;
+        z-index: -1;
+        background: url(images/pattern-background-desktop.svg) no-repeat;
+        background-size: contain;
+    }
+
+    .bg-img-main{
+    width: 450px;
+    height: 220px;
+    }
+
+    .order-intro{
+        width: 354px;
+    }
+
+    p{
+        width: 354px;
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    .plan{
+        width: 354px;
+        height: 98px;
+    }
+
+    #payment{
+        width: 354px;
+        height: 50px;
+    }
 }
